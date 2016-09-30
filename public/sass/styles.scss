@@ -1,6 +1,23 @@
 @import "../bower_components/bootstrap/dist/css/bootstrap.min.css";
 @import "main.scss";
 
+
+body{
+	background-color: #000000;
+}
+
+
+h1,h3,h3,h5,h6{
+	color: #FCA311;
+}
+
 input{
 	display: block;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+button{
+	margin-top: 10px;
+	border-radius: 5px;
 }

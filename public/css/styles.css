@@ -98,7 +98,25 @@ body {
   border-color: #8D1BA2 !important;
 }
 
-/* line 4, ../sass/styles.scss */
+/* line 5, ../sass/styles.scss */
+body {
+  background-color: #000000;
+}
+
+/* line 10, ../sass/styles.scss */
+h1, h3, h3, h5, h6 {
+  color: #FCA311;
+}
+
+/* line 14, ../sass/styles.scss */
 input {
   display: block;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* line 20, ../sass/styles.scss */
+button {
+  margin-top: 10px;
+  border-radius: 5px;
 }

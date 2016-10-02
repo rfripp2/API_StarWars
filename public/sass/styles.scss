@@ -1,14 +1,31 @@
 @import "../bower_components/bootstrap/dist/css/bootstrap.min.css";
 @import "main.scss";
-
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono';
 
 body{
-	background-color: #000000;
+	background-color: #011627;
 }
 
 
-h1,h3,h3,h5,h6{
+h1,h3,h4,h5,h6,p{
 	color: #FCA311;
+	margin-top: 15px;
+	font-family: 'Roboto Mono', monospace;
+}
+
+h6{
+	color: #FDFFFC;
+	font-size: 9px;
+}
+
+h4{
+	color: #E71D36;
+	margin-top: 35px;
+}
+
+.title{
+	margin-bottom: 24px;
+
 }
 
 input{
@@ -20,4 +37,18 @@ input{
 button{
 	margin-top: 10px;
 	border-radius: 5px;
+}
+
+.banner_tittle{
+	margin-left: 45%;
+}
+
+img{
+	height: 45px;
+	width: 75px;
+
+}
+
+.navbar{
+	background-color: #011627;
 }

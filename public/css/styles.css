@@ -1,4 +1,5 @@
 @import url(../bower_components/bootstrap/dist/css/bootstrap.min.css);
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono";
 /* line 1, ../sass/_main.scss */
 body {
   padding-top: 50px;
@@ -24,7 +25,7 @@ body {
 
 /* line 15, ../sass/_main.scss */
 .brand-name {
-  color: #fff !important;
+  color: #fff;
 }
 
 /* line 16, ../sass/_main.scss */
@@ -100,23 +101,58 @@ body {
 
 /* line 5, ../sass/styles.scss */
 body {
-  background-color: #000000;
+  background-color: #011627;
 }
 
 /* line 10, ../sass/styles.scss */
-h1, h3, h3, h5, h6 {
+h1, h3, h4, h5, h6, p {
   color: #FCA311;
+  margin-top: 15px;
+  font-family: 'Roboto Mono', monospace;
 }
 
-/* line 14, ../sass/styles.scss */
+/* line 16, ../sass/styles.scss */
+h6 {
+  color: #FDFFFC;
+  font-size: 9px;
+}
+
+/* line 21, ../sass/styles.scss */
+h4 {
+  color: #E71D36;
+  margin-top: 35px;
+}
+
+/* line 26, ../sass/styles.scss */
+.title {
+  margin-bottom: 24px;
+}
+
+/* line 31, ../sass/styles.scss */
 input {
   display: block;
   margin-top: 10px;
   border-radius: 5px;
 }
 
-/* line 20, ../sass/styles.scss */
+/* line 37, ../sass/styles.scss */
 button {
   margin-top: 10px;
   border-radius: 5px;
+}
+
+/* line 42, ../sass/styles.scss */
+.banner_tittle {
+  margin-left: 45%;
+}
+
+/* line 46, ../sass/styles.scss */
+img {
+  height: 45px;
+  width: 75px;
+}
+
+/* line 52, ../sass/styles.scss */
+.navbar {
+  background-color: #011627;
 }

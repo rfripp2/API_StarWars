@@ -11,10 +11,15 @@ function clearData(){
 
 API = function(){
 $("#planets").on("click",function(){
-	estado = true;
+	estado = false;
 	clearData();
+
+
+    for (var ix = 1; ix <= 3; ix++) {
+                        estado = true;
+
 		$.ajax({
-                url: "http://swapi.co/api/planets/",
+                url: "http://swapi.co/api/planets/?page="+ ix,
                 type: 'get',
                 dataType: 'json',
                 success: function(data) {
@@ -22,26 +27,26 @@ $("#planets").on("click",function(){
                         console.log(data.results[i]);
                         var resultados = data.results[i];
                  
-                        if(estado){
+                        //if(estado){
                         $("#first").html("<h4>" + "Name" + "</h4>");
                         $("#second").html("<h4>" + "Climate" + "</h4>");
                         $("#third").html("<h4>" + "Terrain" + "</h4>");
                         $("#fourth").html("<h4>" + "Rotation Period" + "</h4>");
                         $("#fifth").html("<h4>" + "Orbital Period" + "</h4>");
 
-                        $('#uno').append('<h6>' + resultados.name + '</h6>')
+                        $('#uno').append('<h6>' + resultados.name +  " " + i  + '</h6>')
                         $('#dos').append('<div><h6>' + resultados.climate + '</h6></div>');
                         $('#tres').append('<div><h6>' + resultados.terrain + '</h6></div>');
                         $('#cuatro').append('<div><h6>' + resultados.rotation_period + '</h6></div>');
                         $('#cinco').append('<div><h6>' + resultados.orbital_period + '</h6></div>');
-                    }
+                    //}
                 }
-                estado = false;
                 },
                 error: function(data) {
                     console.log("no volvio nada-----");
                 }
             })
+    }
 	})
 
 

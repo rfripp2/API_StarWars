@@ -19,11 +19,13 @@ datosUsuarios = function(){
 
 		if ($("#nombre").val() == "" || $("#apellido").val() == "" || $("#username").val() == "" ||
 			$("#email").val() == "" || $("#pw").val() == ""){
-			$("#message").html("<p>Complete all the fields</p>");
+			$(".message").html("<p>Complete all fields</p>");
 		}else if($("#username").val() == datos.username){
-			$("#message").html("<p>This username already exists</p>");
+			$(".message").html("<p>This username already exists</p>");
 		}else if($("#email").val() == datos.email){
-			$("#message").html("<p>This email already exists</p>");
+			$(".message").html("<p>This email already exists</p>");
+		}else if($("#pw").val().length < 6){
+			$(".message").html("<p>Password must be at least 6 characters</p>");
 		}else{
 		var usuario = new Usuario(nombre,apellido,username,email,password);
 		localstorage(usuario);

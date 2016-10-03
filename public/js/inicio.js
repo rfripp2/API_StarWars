@@ -8,10 +8,9 @@ function inicio() {
 		var pw = $("#pwlogin").val();
 
 		if(datos.username == user && datos.password == pw){
-		console.log("usuario correcto");
 		app.loadTemplate("contenedor","dashboard",API);
 	    }else{
-	    	$("#message").html("<p>Wrong User or Pw</p>");
+	    	$(".message").html("<p>Wrong User or Pw</p>");
 	    }
 	})
 

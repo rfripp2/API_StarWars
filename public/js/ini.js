@@ -5,15 +5,12 @@ router = function(){
 
 	Router.evalRoute = function(view){
 		
-		/*if(localStorage.length == 0){
-			app.loadTemplate("contenedor","createAccount");
-		}*/
-		if(view == undefined){
+		if(localStorage.length == 0){
+			app.loadTemplate("contenedor","createAccount",datosUsuarios);
+		}else if(view == undefined){
             app.loadTemplate("contenedor","inicio",inicio);
-
         }else if(view == "createAccount"){
         	app.loadTemplate("contenedor","createAccount",datosUsuarios)
-
         }
         	app.loadTemplate("navbar","nav",rutas);
 	}
@@ -26,7 +23,7 @@ app = function(router) {
     var myApp = {};
     myApp.init = function() {
         $(document).ready(function() {
-            console.log("-----Se inicio  la app-----------");
+            console.log("-Se inicio  la app-");
             router.evalRoute();
 
         });

@@ -1,9 +1,24 @@
 @import "../bower_components/bootstrap/dist/css/bootstrap.min.css";
 @import "main.scss";
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans';
 
 body{
 	background-color: #011627;
+}
+
+#banner{
+	background-image: url(../images/backgroundnav.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 175px 0 175px;
+    position: relative;
+}
+
+.center_div{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -15,28 +30,36 @@ h1,h3,h4,h5,h6,p{
 
 h6{
 	color: #FDFFFC;
-	font-size: 9px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
 }
 
 h4{
 	color: #E71D36;
-	margin-top: 35px;
+	margin-top: 40px;
 }
 
 .title{
+	margin-top: 350px;
 	margin-bottom: 24px;
+}
 
+#uno{
+	color: #2EC4B6 !important;
 }
 
 input{
 	display: block;
 	margin-top: 10px;
 	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 button{
 	margin-top: 10px;
 	border-radius: 5px;
+	background-color: #E71D36 !important;
 }
 
 .banner_tittle{

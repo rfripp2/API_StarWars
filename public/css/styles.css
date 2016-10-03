@@ -1,5 +1,5 @@
 @import url(../bower_components/bootstrap/dist/css/bootstrap.min.css);
-@import "https://fonts.googleapis.com/css?family=Roboto+Mono";
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans";
 /* line 1, ../sass/_main.scss */
 body {
   padding-top: 50px;
@@ -104,55 +104,82 @@ body {
   background-color: #011627;
 }
 
-/* line 10, ../sass/styles.scss */
+/* line 9, ../sass/styles.scss */
+#banner {
+  background-image: url(../images/backgroundnav.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 175px 0 175px;
+  position: relative;
+}
+
+/* line 18, ../sass/styles.scss */
+.center_div {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 25, ../sass/styles.scss */
 h1, h3, h4, h5, h6, p {
   color: #FCA311;
   margin-top: 15px;
   font-family: 'Roboto Mono', monospace;
 }
 
-/* line 16, ../sass/styles.scss */
+/* line 31, ../sass/styles.scss */
 h6 {
   color: #FDFFFC;
-  font-size: 9px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
 }
 
-/* line 21, ../sass/styles.scss */
+/* line 37, ../sass/styles.scss */
 h4 {
   color: #E71D36;
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
-/* line 26, ../sass/styles.scss */
+/* line 42, ../sass/styles.scss */
 .title {
+  margin-top: 350px;
   margin-bottom: 24px;
 }
 
-/* line 31, ../sass/styles.scss */
+/* line 47, ../sass/styles.scss */
+#uno {
+  color: #2EC4B6 !important;
+}
+
+/* line 51, ../sass/styles.scss */
 input {
   display: block;
   margin-top: 10px;
   border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 37, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 button {
   margin-top: 10px;
   border-radius: 5px;
+  background-color: #E71D36 !important;
 }
 
-/* line 42, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 .banner_tittle {
   margin-left: 45%;
 }
 
-/* line 46, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 img {
   height: 45px;
   width: 75px;
 }
 
-/* line 52, ../sass/styles.scss */
+/* line 75, ../sass/styles.scss */
 .navbar {
   background-color: #011627;
 }
